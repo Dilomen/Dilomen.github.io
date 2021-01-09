@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 git add .
 git commit -m '更新'
-git push --set-upstream origin master
+git push -f --set-upstream origin master
 # 确保脚本抛出遇到的错误
 set -e 
 
