@@ -1,0 +1,27 @@
+stages:
+  - deploy
+ 
+before_script:
+  - echo "开始"
+  - sudo npm install
+  - sudo npm run build
+ 
+cache:
+  paths:
+    - node_modules/
+ 
+deploy_develop:
+  stage: deploy
+  script:
+    - sudo mv ./docs/.vuepress/dist /home/dist
+    
+  only:
+    - develop
+ 
+deploy_stage:
+  stage: deploy
+  script:
+    - sudo mv ./docs/.vuepress/dist /home/dist
+ 
+  only:
+    - master

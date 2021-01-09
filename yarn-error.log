@@ -1,0 +1,44 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add vuepress-plugin-comment -D
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Applications/Wireshark.app/Contents/MacOS
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  10.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/dilomen/Documents/study/Blog_VuePress/node_modules/os-locale/node_modules'
+
+npm manifest: 
+  {
+    "name": "vuepress",
+    "version": "1.0.0",
+    "description": "前端总结学习，前端进阶之路",
+    "main": "index.js",
+    "directories": {
+      "doc": "docs"
+    },
+    "scripts": {
+      "docs:dev": "vuepress dev docs",
+      "docs:build": "vuepress build docs",
+      "deploy": "bash deploy.sh"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "vuepress-plugin-permalink-pinyin": "^1.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

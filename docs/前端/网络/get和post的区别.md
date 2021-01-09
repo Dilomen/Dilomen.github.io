@@ -1,0 +1,9 @@
+- 传输方式：GET 通过 url 传输，post 通过报文传输
+- 传输长度：GET 参数有长度限制（受限于 url 长度），而 POST 无限制
+- GET 在浏览器回退时是无害的，而 POST 会再次提交请求
+- GET 请求会被浏览器主动 cache，而 POST 不会，除非手动设置
+- GET 请求参数会被完整保留在浏览器历史记录里，而- POST 中的参数不会被保留
+- GET 产生一个 TCP 数据包，POST 参数两个 TCP 数据包（Firefox 只发送一次包）
+- post 的安全性比 GET 高，POST 适合密码传输等，而 get 适合文章获取等
+- GET 只能进行 url 编码，而 POST 支持多种编码
+- GET 只接受 ASCII 字符，而 POST 没有限制
