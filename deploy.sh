@@ -1,8 +1,7 @@
 #!/usr/bin/env sh
-git init
 git add .
 git commit -m '更新'
-git push -f git@e.coding.net:dilomen/dilomen.page.me.git original
+git push
 # 确保脚本抛出遇到的错误
 set -e
 
