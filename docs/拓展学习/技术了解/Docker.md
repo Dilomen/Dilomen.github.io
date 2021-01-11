@@ -314,3 +314,20 @@ docker run -d -p 3310:3306 -e MYSQL_ROOT_PASSWORD=123456 --name mysql02 volumes-
 ```
 
 mysql01 和 mysql02 的数据就同步了，但是是相互复制的个体，即一个地方删除，另一个不会删除
+
+## 容器间的访问
+
+如果一个服务需要访问如 mysql 容器，或者 redis 容器，那么就要获取容器的 ip，而不是使用 localhost 作为 host 地址  
+以 mysql 为例  
+1、进入 mysql 容器，然后使用 ifconfig 指令获取 ip
+如果没有 ifconfig 指令，就进行以下安装
+
+```bash
+1、使用命令：apt-get update
+2、apt install net-tools
+3、apt install iputil-ping
+```
+
+2、然后将这个 ip 作为服务连接的 host 即可
+
+!['docker_ip'](/拓展学习/docker_ip.png)
