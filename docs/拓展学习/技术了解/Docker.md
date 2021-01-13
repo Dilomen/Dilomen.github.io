@@ -159,7 +159,7 @@ docker build -t image_project:version .
 docker run -it -d -v /home/ceshi:/home centos /bin/bash
 ```
 
-获取容器/镜像的元数据
+#### 获取容器/镜像的元数据
 
 ```bash
 docker inspect container_id
@@ -319,8 +319,16 @@ mysql01 和 mysql02 的数据就同步了，但是是相互复制的个体，即
 
 如果一个服务需要访问如 mysql 容器，或者 redis 容器，那么就要获取容器的 ip，而不是使用 localhost 作为 host 地址  
 以 mysql 为例  
-1、进入 mysql 容器，然后使用 ifconfig 指令获取 ip
-如果没有 ifconfig 指令，就进行以下安装
+1、获取 IP
+
+- 一种是通过以下指令，找到 IPAddress 字段（推荐）
+
+```bash
+docker inspect containerId
+```
+
+- 还有一种是进入 mysql 容器，然后使用 ifconfig 指令获取 ip
+  如果没有 ifconfig 指令，就进行以下安装
 
 ```bash
 1、使用命令：apt-get update
@@ -331,3 +339,37 @@ mysql01 和 mysql02 的数据就同步了，但是是相互复制的个体，即
 2、然后将这个 ip 作为服务连接的 host 即可
 
 !['docker_ip'](/拓展学习/docker_ip.png)
+
+## 环境打包迁移
+
+1、将容器生成镜像
+
+```bash
+docker commit -a 'xxxx' kje45634hjsd  image:version
+```
+
+2、将镜像打包成 tar 压缩文件
+
+```bash
+docker save -o xxxx.tar image:version
+```
+
+3、将镜像包压缩
+
+```bash
+sudo tar -zcvf xxx.tar.gz xxx.tar
+```
+
+4、迁移到对应的环境下
+
+5、解压压缩包
+
+```bash
+tar -zxvf xxx.tar.gz
+```
+
+6、将压缩包加载到镜像
+
+```bash
+sudo docker load -i xxx.tar
+```
