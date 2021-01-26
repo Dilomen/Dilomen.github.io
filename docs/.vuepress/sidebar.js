@@ -6,7 +6,7 @@ const sidebar = {
     },
     {
       title: "CSS",
-      children: ["水平垂直居中"],
+      children: ["水平垂直居中", 'matrix'],
     },
     {
       title: "网络",

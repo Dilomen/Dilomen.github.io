@@ -373,3 +373,14 @@ tar -zxvf xxx.tar.gz
 ```bash
 sudo docker load -i xxx.tar
 ```
+
+## docker 访问宿主机
+
+进入容器，执行以下的指令
+
+```bash
+ip route
+# 172.17.0.1 就是宿主机的ip
+default via 172.17.0.1 dev eth0
+172.17.0.0/16 dev eth0 proto kernel scope link src 172.17.0.4
+```
