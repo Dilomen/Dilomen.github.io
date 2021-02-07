@@ -6,7 +6,7 @@
 
 可以点开 network 下的接口请求，找到 Initiator，这里会出现接口接口请求的执行栈
 
-<a data-fancybox title=""接口执行代码位置定位"" href="/前端/接口执行代码位置定位.png">!["接口执行代码位置定位"](/前端/接口执行代码位置定位.png)</a>
+<a data-fancybox title="接口执行代码位置定位" href="/前端/接口执行代码位置定位.png">!["接口执行代码位置定位"](/前端/接口执行代码位置定位.png)</a>
 
 ### 查看请求连接时间
 
@@ -24,7 +24,7 @@
 
 查找元素的 Event Listeners，点开绑定的事件，就可以知道在相应操作时所执行了哪些事件
 
-<a data-fancybox title=""元素上的绑定事件"" href="/前端/元素上的绑定事件.png">!["元素上的绑定事件"](/前端/元素上的绑定事件.png)</a>
+<a data-fancybox title="元素上的绑定事件" href="/前端/元素上的绑定事件.png">!["元素上的绑定事件"](/前端/元素上的绑定事件.png)</a>
 
 ### 浏览器直接修改文件
 
@@ -32,44 +32,44 @@
 
 打开 Sources，找到 Filesystem，点击 Add folder to workspace，加入自己的工作目录即可
 
-<a data-fancybox title=""浏览器直接修改文件"" href="/前端/浏览器直接修改文件.png">!["浏览器直接修改文件"](/前端/浏览器直接修改文件.png)</a>
+<a data-fancybox title="浏览器直接修改文件" href="/前端/浏览器直接修改文件.png">!["浏览器直接修改文件"](/前端/浏览器直接修改文件.png)</a>
 
 然后就可以修改浏览器中的“文件”，或者在样式调试中修改，所修改的内容会同步到文件
 
 ### 监控页面的重绘（性能检测）
 
 > 场景：我们需要对页面进行性能优化的时候，希望能看到哪些内容被重绘了
-> <a data-fancybox title=""浏览器直接修改文件"" href="/前端/重绘监控01.png '浏览器直接修改文件'">!["浏览器直接修改文件"](/前端/重绘监控01.png '浏览器直接修改文件')</a>
+> <a data-fancybox title="浏览器直接修改文件" href="/前端/重绘监控01.png '浏览器直接修改文件'">!["浏览器直接修改文件"](/前端/重绘监控01.png '浏览器直接修改文件')</a>
 
 点击“三点“拓展，选择 More tools,然后点击 Rendering
-<a data-fancybox title=""浏览器直接修改文件"" href="/前端/重绘监控02.png '浏览器直接修改文件'">!["浏览器直接修改文件"](/前端/重绘监控02.png '浏览器直接修改文件')</a>
+<a data-fancybox title="浏览器直接修改文件" href="/前端/重绘监控02.png '浏览器直接修改文件'">!["浏览器直接修改文件"](/前端/重绘监控02.png '浏览器直接修改文件')</a>
 选择想要显示高亮的内容
 
 ### 设备模拟网络请求
 
-<a data-fancybox title=""浏览器直接修改文件"" href="/前端/设备模拟网络请求01.png">!["浏览器直接修改文件"](/前端/设备模拟网络请求01.png)</a>
+<a data-fancybox title="浏览器直接修改文件" href="/前端/设备模拟网络请求01.png">!["浏览器直接修改文件"](/前端/设备模拟网络请求01.png)</a>
 
 可以查看不同网络和不同设备，在请求内容的不同表现
 
-<a data-fancybox title=""浏览器直接修改文件"" href="/前端/设备模拟网络请求02.png">!["浏览器直接修改文件"](/前端/设备模拟网络请求02.png)</a>
+<a data-fancybox title="浏览器直接修改文件" href="/前端/设备模拟网络请求02.png">!["浏览器直接修改文件"](/前端/设备模拟网络请求02.png)</a>
 
 ### 测试当前页面的方法和添加新的方法
 
 Source 下的 snippet 可以编辑新的代码在当前页面下执行
 
-<a data-fancybox title=""snippet测试方法"" href="/前端/snippet测试方法.png 'snippet测试方法'">!["snippet测试方法"](/前端/snippet测试方法.png 'snippet测试方法')</a>
+<a data-fancybox title="snippet测试方法" href="/前端/snippet测试方法.png 'snippet测试方法'">!["snippet测试方法"](/前端/snippet测试方法.png 'snippet测试方法')</a>
 
 ### Performance
 
 记录和运行分析应用程序所有的活动
 
-<a data-fancybox title=""Performance"" href="/前端/Performance.png">!["Performance"](/前端/Performance.png)</a>
+<a data-fancybox title="Performance" href="/前端/Performance.png">!["Performance"](/前端/Performance.png)</a>
 
 > 转载于[https://blog.csdn.net/kongduxue/article/details/82017491](https://blog.csdn.net/kongduxue/article/details/82017491)
 
 同时还有一个 performance 的全局对象，包含各种性能数据
 
-<a data-fancybox title=""performance对象"" href="/前端/performance对象.png">!["performance对象"](/前端/performance对象.png)</a>
+<a data-fancybox title="performance对象" href="/前端/performance对象.png">!["performance对象"](/前端/performance对象.png)</a>
 
 ```js
 performance = {
@@ -184,4 +184,4 @@ function computed() {
 }
 ```
 
-### 持续更新中...
+### 持续更新中

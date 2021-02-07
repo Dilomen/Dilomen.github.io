@@ -44,7 +44,31 @@ setTimeout(() => {
 <a data-fancybox title="Event Loop" href="/JavaScript/EventLoop.png">![Event Loop](/JavaScript/EventLoop.png)</a>
 :::
 
-实现简单的逻辑
+setTimeout 会在整个同步代码执行完成以及任务队列（微任务）都完成之后再执行，也就是说即使设置的时间为 0，也是会被阻塞的
+
+```js
+let i = 0
+for (i = 0; i < 100000; i++) {
+  i++;
+}
+console.log(i)
+new Promise((resolve) => {
+  let i = 0
+  for (i = 0; i < 200000; i++) {
+    i++;
+  }
+  resolve(i);
+}).then((data) => {
+  console.log(data);
+});
+setTimeout(() => {
+  console.log(300000);
+}, 0);
+
+先输出100000,再输出200000，再输出300000
+```
+
+#### 实现简单的逻辑
 
 ```js
 while (true) {
