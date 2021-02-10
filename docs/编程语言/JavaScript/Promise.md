@@ -2,7 +2,7 @@
 
 > Promise 作为 ES6 提出的一种异步解决方案，其有效的解决了之前由 callback 造成的回调地狱写法，当然过长的链式调用也不利于维护和调试。
 
-### Promise 三种状态：
+### Promise 三种状态
 
 - 进行中（**pending**）：操作还未开始
 - 结束后进入以下两种状态中的一种：
@@ -96,20 +96,26 @@ promise
 
 ```js
 class Promise {
+  static STATUS_PEDDING = 'pending';
+  static STATUS_FULFILLED = 'fulfilled';
+  static STATUS_REJECTED = 'rejected';
   constructor(executor) {
-    this.state = 'pending';
+    this.state = Promise.STATUS_PEDDING;
     this.value = undefined;
     this.reason = undefined;
-
+    this.execList = [];
     const resolve = (value) => {
-      if (this.state === 'pending') {
-        this.state = 'fulfilled';
+      if (this.state === Promise.STATUS_PEDDING) {
+        this.state = Promise.STATUS_FULFILLED;
         this.value = value;
+        setTimeout(() => {
+          this.execList.forEach((fn) => fn());
+        }, 0);
       }
     };
     const reject = (reason) => {
-      if (this.state === 'pending') {
-        this.state = 'rejected';
+      if (this.state === Promise.STATUS_PEDDING) {
+        this.state = Promise.STATUS_REJECTED;
         this.reason = reason;
       }
     };
@@ -123,14 +129,23 @@ class Promise {
 
   then(onFufilled, onRejected) {
     const promise = new Promise((resolve, reject) => {
-      if (this.state === 'fulfilled') {
-        let result = onFufilled && onFufilled(this.value);
-        resolve(result);
-      }
-      if (this.state === 'rejected') {
-        onRejected && onRejected(this.reason);
-        reject(this.reason);
-      }
+      const _self = this;
+      // 加入定时器，让同步代码先执行
+      setTimeout(() => {
+        function execFn() {
+          let result = onFufilled && onFufilled(_self.value);
+          resolve(result);
+        }
+        // 解决有setTimeout等延时的情况
+        if (_self.state === Promise.STATUS_PEDDING) {
+          _self.execList.push(execFn);
+        } else if (_self.state === Promise.STATUS_FULFILLED) {
+          execFn();
+        } else if (_self.state === Promise.STATUS_REJECTED) {
+          onRejected && onRejected(_self.reason);
+          reject(_self.reason);
+        }
+      }, 0);
     });
     return promise;
   }
