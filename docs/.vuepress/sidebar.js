@@ -34,7 +34,7 @@ const sidebar = {
         "postMessage",
         "js模拟传统面向对象功能",
         "aysnc-await",
-        "柯里化函数",
+        "柯里化函数和复合函数",
         "常用函数"
         // 'js查缺补漏01'
       ],
