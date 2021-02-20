@@ -7,7 +7,7 @@ module.exports = {
     ["meta", { name: "description", content: "前端进阶之路" }],
     ["meta", { name: "keywords", content: "前端博客,前端进阶,前端学习分享,web前端技术,前端进阶" }],
     ["meta", { name: "baidu-site-verification", content: "1habgJadYO" }],
-    ["link", { rel: "shortcut icon", href: "/favicon.ico", type: "images/x-icon" }],
+    ["link", { rel: "shortcut icon", href: "/logo.ico", type: "images/x-icon" }],
     ["link", { rel: "manifest", href: "/manifest.json" }],
     ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
     ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],

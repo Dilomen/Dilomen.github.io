@@ -133,6 +133,12 @@ const sidebar = {
       children: ["搭建组件库", "基本知识"],
     },
   ],
+  "/WebGL学习/": [
+    {
+      title: "基础学习",
+      children: ["基础知识"]
+    }
+  ],
   "/拓展学习/Node/": [
     {
       title: "基础知识",
