@@ -24,7 +24,7 @@ Event Loop 即事件循环，是 JS 执行的代码时，协调各种操作（�
   - I/O
   - UI 渲染
 
-## setTimeout
+#### setTimeout
 
 ```js
 Promise.resolve().then(() => {
@@ -86,6 +86,39 @@ while (true) {
   }
 }
 ```
+
+## 浏览器剖析
+
+> 由于 Chrome 占比比较大，所以就以 Chrome 为例
+
+首先编写以下代码
+
+```html
+<body>
+  <div class="box"></div>
+</body>
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+</style>
+<script>
+  new Promise((resolve) => {
+    resolve(2);
+  }).then((data) => {
+    console.log(data);
+  });
+  console.log(1);
+  setTimeout(() => {
+    console.log(3);
+  }, 100);
+</script>
+```
+
+首先借助 chrome detvool 中的 performance，可以看到有多个执行的线程，而我们的代码主要是由主线程来执行的
+
+![performance_thread](/JavaScript/performance_thread.png)
 
 ## 关于 Node
 
