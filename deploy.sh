@@ -24,7 +24,7 @@ git commit -m 'deploy'
 git push -f https://github.com/Dilomen/Dilomen.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@e.coding.net:dilomen/dilomen.page.me.git master
+git push -f https://e.coding.net/dilomen/dilomen.page.me/dilomen.page.me.git master
 
 
 # cd -
