@@ -134,6 +134,20 @@ const sidebar = {
       children: ["搭建组件库", "基本知识"],
     },
   ],
+  "/单元测试/": [
+    {
+      title: "Jest",
+      children: ["基本知识"],
+    },
+    {
+      title: "Mocha",
+      children: [],
+    },
+    {
+      title: "ReactTestLibrary",
+      children: [],
+    },
+  ],
   "/WebGL学习/": [
     {
       title: "基础学习",

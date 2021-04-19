@@ -33,6 +33,7 @@ const nav = [
           { text: "Vue", link: "/框架、库/Vue/生命周期" },
           { text: "微信小程序", link: "/框架、库/微信小程序/基础知识" },
           { text: "打包工具", link: "/打包工具/webpack/基本配置" },
+          { text: "单元测试", link: "/单元测试/Jest/基本知识" },
         ],
       }
     ],
