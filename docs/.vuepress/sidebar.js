@@ -140,11 +140,15 @@ const sidebar = {
       children: ["基本知识"],
     },
     {
-      title: "Mocha",
-      children: [],
+      title: "ReactTestLibrary",
+      children: ["基本知识"],
     },
     {
-      title: "ReactTestLibrary",
+      title: "VueTestUtils",
+      children: ["基本知识"],
+    },
+    {
+      title: "Mocha",
       children: [],
     },
   ],
