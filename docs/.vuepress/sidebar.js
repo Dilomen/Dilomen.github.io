@@ -137,15 +137,15 @@ const sidebar = {
   "/单元测试/": [
     {
       title: "Jest",
-      children: ["基本知识"],
+      children: ["基本知识", "简单使用"],
     },
     {
       title: "ReactTestLibrary",
-      children: ["基本知识"],
+      children: ["基本知识", "简单使用"],
     },
     {
       title: "VueTestUtils",
-      children: ["基本知识"],
+      children: ["基本知识", "简单使用"],
     },
     {
       title: "Mocha",
