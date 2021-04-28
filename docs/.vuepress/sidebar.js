@@ -141,7 +141,7 @@ const sidebar = {
     },
     {
       title: "ReactTestLibrary",
-      children: ["基本知识", "简单使用"],
+      children: ["基本知识", "查询", "事件","简单使用"],
     },
     {
       title: "VueTestUtils",
