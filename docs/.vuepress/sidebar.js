@@ -121,7 +121,7 @@ const sidebar = {
     },
     {
       title: "leetcode",
-      children: ["无重复字符的最长子串", "Z字形变换"],
+      children: ["无重复字符的最长子串", "Z字形变换", "循环依赖"],
     },
   ],
   "/打包工具/": [
