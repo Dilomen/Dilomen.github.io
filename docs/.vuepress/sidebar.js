@@ -52,7 +52,8 @@ const sidebar = {
         "高阶组件",
         "context",
         "setState",
-        "Hooks"
+        "Hooks",
+        "Fiber"
         // "记一次react+ts的环境搭建，并上传到npm"
       ],
     },
