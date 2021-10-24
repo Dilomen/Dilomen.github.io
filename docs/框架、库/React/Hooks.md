@@ -47,7 +47,7 @@ class ManageTest extends React.Component {
 使用 Hook
 
 ```jsx
-import { useState } from "react";
+import { useState } from 'react';
 function ManageTest(props) {
   const [count, setCount] = useState(2);
   return <p onClick={changeCount}>{count}</p>;
@@ -60,8 +60,8 @@ function ManageTest(props) {
 - 支持初始化基本变量和应用类型
 
 ```js
-const [text, setText] = useState("hello");
-const [info, setInfo] = useState({ name: "Jack", age: 22 });
+const [text, setText] = useState('hello');
+const [info, setInfo] = useState({ name: 'Jack', age: 22 });
 ```
 
 - 改变状态的方法，可以直接接受被改变后的数据，也可以接受一个返回改变数据的函数
@@ -125,7 +125,7 @@ class Test extends React.Component {
 使用 Hook
 
 ```jsx
-import { useEffect } from "react";
+import { useEffect } from 'react';
 function Test() {
   useEffect(() => {
     /* do something */
@@ -137,24 +137,77 @@ function Test() {
 }
 ```
 
-#### 注意点
+### 第二个参数
 
-- 可以通过 return 返回一个方法来清除组件销毁时的一些造成副作用的东西，比如内存泄漏
-  return 后的函数,当 deps 为空数组时其就是 unmount 的作用,当 deps 不是空数组,有依赖时,会在依赖改变的时候进行执行先执行,再进行前部分内容,相当于“unmount”=>updated,当然在组件卸载时,无论有无依赖都会被执行 return 后的内容,执行顺序就是代码顺序,谁写在前面,谁就先执行
+相当于 effect 的依赖项，只有当该参数内的数据发生变化时，effect 才会执行。相当于帮助你做了 update 时的判断(<em>只是通过 Object.is 方法进行比较，所以在使用引用类型的时候需要注意，可能会进入死循环</em>)。
 
-```jsx
+- 如果<em>没有写第二个参数</em>，就是<em>每次都会执行</em>，不管什么数据更新
+
+```js
 useEffect(() => {
-  /* do something */
+  console.log('each execute');
+});
+```
+
+- 如果第二个参数是<em>空数组</em>，那么只会执行 Mount 和 Unmount
+
+```js
+useEffect(() => {
+  console.log('component mount');
   return () => {
-    clearInterval(/* do something */);
+    console.log('component unmount');
   };
 }, []);
 ```
 
-- 第二个参数，相当于 effect 的依赖项，只有当该参数内的数据发生变化时，effect 才会执行。相当于帮助你做了 update 时的判断。
-  - 如果<em>没有写第二个参数</em>，就是<em>每次都会执行</em>，不管什么数据更新
-  - 如果第二个参数是<em>空数组</em>，那么只会执行 Mount 和 Unmount
-  - 如果是如\[count]，那么只有当 count 发生变化的时候，才会执行 effect 函数
+- 如果是如\[count]，那么只有当 count 发生变化的时候，才会执行 effect 函数
+
+```js
+useEffect(() => {
+  console.log('deps field updated');
+}, [count]);
+```
+
+### return 函数
+
+effect 函数可以通过 return 返回一个方法来清除组件销毁时的一些造成副作用的东西，比如内存泄漏
+
+:::tip
+<em>return 函数当在组件被卸载的时候，不管有没有 deps，都会被执行</em>,执行顺序就是队列，按照代码顺序先进先出
+:::
+
+- 当 deps 为空数组的时候，那么就<em>只有在组件被卸载的时候</em>会被执行
+
+```js
+useEffect(() => {
+  console.log('component mount');
+  return () => {
+    console.log('component unmount');
+  };
+}, []);
+```
+
+- 当 deps 有具体的数据依赖时，那么<em>只有当数据发生改变时才会执行</em>return 后的函数，但是会先执行 "unmount",再执行 updated
+
+```js
+useEffect(() => {
+  console.log('deps field updated'); // 后执行
+  return () => {
+    console.log('deps field unmount'); // 先执行
+  };
+}, [count]);
+```
+
+- 当 deps 不存在的时候，那么<em>每一次都会被执行</em>，但是会先执行 unmount,再执行 updated
+
+```js
+useEffect(() => {
+  console.log('each execute'); // 后执行
+  return () => {
+    console.log('each unmount'); // 先执行
+  };
+});
+```
 
 ## useContext
 
@@ -243,7 +296,7 @@ const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 ```
 
 ```js
-import React, { useMemo } from "react";
+import React, { useMemo } from 'react';
 function Test(props) {
   const { count } = props;
   const handleValue = (value) => {
@@ -271,7 +324,7 @@ const memoizedCallback = useCallback(() => {
 ```
 
 ```js
-import React, { useCallback } from "react";
+import React, { useCallback } from 'react';
 
 function Test(props) {
   const { count } = props;
@@ -308,12 +361,12 @@ function Test() {
 比如，模拟登陆状态
 
 ```js
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 function useFriend() {
-  const [inOnline, setIsOnline] = useState("未登陆");
+  const [inOnline, setIsOnline] = useState('未登陆');
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsOnline("已登录");
+      setIsOnline('已登录');
     }, 1000);
     return () => clearTimeout(timer);
   }, [inOnline]);
