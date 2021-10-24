@@ -63,7 +63,7 @@ const sidebar = {
         "Hooks",
         "Fiber",
         // "记一次react+ts的环境搭建，并上传到npm"
-      ],
+      ], 
     },
   ],
   "/框架、库/Vue/": [
