@@ -6,7 +6,7 @@ const sidebar = {
     },
     {
       title: "CSS",
-      children: ["水平垂直居中", 'matrix'],
+      children: ["水平垂直居中", "matrix"],
     },
     {
       title: "网络",
@@ -14,7 +14,14 @@ const sidebar = {
     },
     {
       title: "浏览器",
-      children: ["页面优化小技巧", "浏览器缓存机制", "Chrome调试", "客户端渲染和服务端渲染", "深入了解现代浏览器", "重绘和回流"],
+      children: [
+        "页面优化小技巧",
+        "浏览器缓存机制",
+        "Chrome调试",
+        "客户端渲染和服务端渲染",
+        "深入了解现代浏览器",
+        "重绘和回流",
+      ],
     },
   ],
   "/编程语言/": [
@@ -35,7 +42,8 @@ const sidebar = {
         "js模拟传统面向对象功能",
         "aysnc-await",
         "柯里化函数和复合函数",
-        "常用函数"
+        "常用函数",
+        "requestIdleCallback",
         // 'js查缺补漏01'
       ],
     },
@@ -53,7 +61,7 @@ const sidebar = {
         "context",
         "setState",
         "Hooks",
-        "Fiber"
+        "Fiber",
         // "记一次react+ts的环境搭建，并上传到npm"
       ],
     },
@@ -85,7 +93,7 @@ const sidebar = {
     },
     {
       title: "vue-router",
-      children: ['基本知识', 'hash', 'history', 'static'],
+      children: ["基本知识", "hash", "history", "static"],
     },
     {
       title: "react",
@@ -94,7 +102,7 @@ const sidebar = {
     {
       title: "antd",
       children: ["form"],
-    }
+    },
   ],
   "/计算机通用/": [
     {
@@ -143,7 +151,7 @@ const sidebar = {
     },
     {
       title: "ReactTestLibrary",
-      children: ["基本知识", "查询", "事件","简单使用"],
+      children: ["基本知识", "查询", "事件", "简单使用"],
     },
     {
       title: "VueTestUtils",
@@ -157,13 +165,13 @@ const sidebar = {
   "/WebGL学习/": [
     {
       title: "基础学习",
-      children: ["基础知识"]
-    }
+      children: ["基础知识"],
+    },
   ],
   "/拓展学习/Node/": [
     {
       title: "基础知识",
-      children: ["基础知识"]
+      children: ["基础知识"],
     },
     {
       title: "深入浅出Node笔记",
@@ -173,10 +181,10 @@ const sidebar = {
         "03_异步I:O",
         "04_异步编程",
         "07_网络编程",
-        "09_玩转进程"
+        "09_玩转进程",
         // "10_单元测试"
-      ]
-    }
+      ],
+    },
   ],
   "/拓展学习/": [
     {
@@ -200,7 +208,7 @@ const sidebar = {
     {
       title: "技术杂谈",
       children: ["关于重构的那点事", "优秀文章", "优秀的个人博客"],
-    }
+    },
   ],
 };
 
