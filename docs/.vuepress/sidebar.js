@@ -97,7 +97,7 @@ const sidebar = {
     },
     {
       title: "react",
-      children: ["Component"],
+      children: ["渲染机制", "Hooks", "Component"],
     },
     {
       title: "antd",
