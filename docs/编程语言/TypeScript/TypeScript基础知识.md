@@ -172,6 +172,17 @@ class Test implements Person {
 }
 ```
 
+#### **断言**
+
+断言是让类型检查跳过这个类型的校验，默认就是通过，因此不会错误提示
+
+```ts
+interface IPerson {
+  a: number;
+}
+const person = {} as IPerson;
+```
+
 #### **泛型**
 
 - 支持不特定的数据类型 要求：传入的参数和返回的参数一致
