@@ -127,7 +127,7 @@ const sidebar = {
     },
     {
       title: "算法",
-      children: ["排序", "遍历"],
+      children: ["排序", "遍历", "二分法", "双指针"],
     },
     {
       title: "leetcode",
@@ -162,12 +162,12 @@ const sidebar = {
       children: [],
     },
   ],
-  "/WebGL学习/": [
-    {
-      title: "基础学习",
-      children: ["基础知识"],
-    },
-  ],
+  // "/WebGL学习/": [
+  //   {
+  //     title: "基础学习",
+  //     children: ["基础知识"],
+  //   },
+  // ],
   "/拓展学习/Node/": [
     {
       title: "基础知识",

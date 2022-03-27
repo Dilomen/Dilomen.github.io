@@ -9,11 +9,11 @@ module.exports = {
     ["meta", { name: "baidu-site-verification", content: "1habgJadYO" }],
     ["link", { rel: "shortcut icon", href: "/logo.ico", type: "images/x-icon" }],
     ["link", { rel: "manifest", href: "/manifest.json" }],
-    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
-    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
-    ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }],
-    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css' }],
-    ['link', { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" }]
+    ['script', { src: 'https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.slim.min.js' }],
+    ['script', { src: 'https://cdn.bootcdn.net/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
+    ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.bootcdn.net/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.bootcdn.net/ajax/libs/KaTeX/0.7.1/katex.min.css' }],
+    ['link', { rel: "stylesheet", href: "https://cdn.bootcdn.net/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" }]
   ],
   themeConfig: {
     nav,

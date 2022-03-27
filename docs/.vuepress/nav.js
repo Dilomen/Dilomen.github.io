@@ -49,13 +49,13 @@ const nav = [
       { text: "vue-router", link: "/源码分析/vue-router/基本知识" }
     ]
   },
-  {
-    text: "WebGL",
-    link: '/WebGL/学习',
-    items: [
-      { text: "WebGL学习", link: "/WebGL/学习/基础知识" },
-    ]
-  },
+  // {
+  //   text: "WebGL",
+  //   link: '/WebGL/学习',
+  //   items: [
+  //     { text: "WebGL学习", link: "/WebGL/学习/基础知识" },
+  //   ]
+  // },
   {
     text: "计算机通用",
     link: "/计算机通用/",

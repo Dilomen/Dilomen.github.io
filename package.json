@@ -20,7 +20,7 @@
     "vuepress": "1.8.2",
     "vuepress-plugin-autometa": "^0.1.13",
     "vuepress-plugin-baidu-autopush": "^1.0.1",
-    "vuepress-plugin-comment": "^0.7.2",
+    "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-permalink-pinyin": "^1.0.0"
   }
 }
