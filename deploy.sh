@@ -23,10 +23,10 @@ git commit -m 'deploy'
 
 # 如果发布到 https://<your_token>@<USERNAME>.github.io
 git push -f https://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@github.com/Dilomen/Dilomen.github.io.git master
-
+set -e 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@e.coding.net:dilomen/dilomen.page.me.git master
-
+set -e 
 
 # cd -
 
