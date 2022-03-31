@@ -2,7 +2,7 @@
 git pull
 git add .
 git commit -m '更新'
-git push -f https://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@github.com/Dilomen/Blog.git master
+git push -f https://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@github.com/Dilomen/Blog.git master
 # 确保脚本抛出遇到的错误
 set -e 
 
@@ -22,7 +22,7 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<your_token>@<USERNAME>.github.io
-git push -f https://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@github.com/Dilomen/Dilomen.github.io.git master
+git push -f https://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@github.com/Dilomen/Dilomen.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@e.coding.net:dilomen/dilomen.page.me.git master
