@@ -64,7 +64,7 @@ const nav = [
       { text: "设计模式", link: "/计算机通用/设计模式/设计模式介绍" },
       { text: "web安全", link: "/计算机通用/web安全/web安全简述" },
       { text: "算法", link: "/计算机通用/算法/排序" },
-      { text: "leetcode", link: "/计算机通用/leetcode/无重复字符的最长子串" },
+      // { text: "leetcode", link: "/计算机通用/leetcode/无重复字符的最长子串" },
     ],
   },
   {

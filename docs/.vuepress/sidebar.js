@@ -63,7 +63,7 @@ const sidebar = {
         "Hooks",
         "Fiber",
         // "记一次react+ts的环境搭建，并上传到npm"
-      ], 
+      ],
     },
   ],
   "/框架、库/Vue/": [
@@ -127,7 +127,7 @@ const sidebar = {
     },
     {
       title: "算法",
-      children: ["排序", "遍历", "二分法", "双指针", "滑动窗口"],
+      children: ["排序", "遍历", "深度优先搜索", "广度优先搜索", "二分法", "双指针", "滑动窗口"],
     },
     // {
     //   title: "leetcode",
