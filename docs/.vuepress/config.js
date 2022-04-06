@@ -43,6 +43,7 @@ module.exports = {
     'vuepress-plugin-baidu-autopush'
   ],
   markdown: {
+    lineNumbers: true,
     extendMarkdown: md => {
       md.set({
         html: true
