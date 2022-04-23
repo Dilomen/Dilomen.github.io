@@ -194,3 +194,50 @@ class Promise {
   }
 }
 ```
+
+## 实现一个 PromiseChain 方法，使得传入的 promise 数组按顺序执行
+
+```js
+const promise1 = () =>
+  new Promise((resolve) => {
+    console.log('执行promise1');
+    setTimeout(() => {
+      resolve('执行promise2');
+    }, 1000);
+  });
+const promise2 = (data) =>
+  new Promise((resolve) => {
+    console.log(data);
+    resolve('执行promise3');
+  });
+const promise3 = (data) =>
+  new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(data);
+      resolve('执行完毕');
+    }, 50);
+  });
+
+function promiseChain(promiseList) {
+  let promise = promiseList.shift();
+  while (promiseList.length) {
+    if (promise instanceof Function) promise = promise();
+    // then 接受两个参数 onFufilled, onRejected 作为结果的调用，then返回一个promise
+    promise = promise.then(promiseList.shift(), (err) => console.log(err));
+  }
+  promise.then((data) => console.log(data));
+  return promise;
+}
+
+promiseChain([promise1, promise2, promise3]);
+```
+
+```js
+// 使用async/await
+async function promiseChain(promiseList) {
+  let preData = null;
+  for (let promise of promiseList) {
+    preData = await promise(preData);
+  }
+}
+```
