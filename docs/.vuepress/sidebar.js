@@ -8,21 +8,6 @@ const sidebar = {
       title: "CSS",
       children: ["水平垂直居中", "matrix"],
     },
-    {
-      title: "网络",
-      children: ["常见的状态码", "get和post的区别", "HTTP连接"],
-    },
-    {
-      title: "浏览器",
-      children: [
-        "页面优化小技巧",
-        "浏览器缓存机制",
-        "Chrome调试",
-        "客户端渲染和服务端渲染",
-        "深入了解现代浏览器",
-        "重绘和回流",
-      ],
-    },
   ],
   "/编程语言/": [
     {
@@ -49,7 +34,7 @@ const sidebar = {
     },
     {
       title: "TypeScript",
-      children: ["TypeScript基础知识"],
+      children: ["基础知识", "泛型"],
     },
   ],
   "/框架、库/React/": [
@@ -145,8 +130,23 @@ const sidebar = {
     //   title: "leetcode",
     //   children: ["无重复字符的最长子串", "Z字形变换", "循环依赖"],
     // },
+    {
+      title: "网络",
+      children: ["常见的状态码", "get和post的区别", "HTTP连接"],
+    },
+    {
+      title: "浏览器",
+      children: [
+        "页面优化小技巧",
+        "浏览器缓存机制",
+        "Chrome调试",
+        "客户端渲染和服务端渲染",
+        "深入了解现代浏览器",
+        "重绘和回流",
+      ],
+    },
   ],
-  "/打包工具/": [
+  "/工程化/打包工具/": [
     {
       title: "webpack",
       children: ["基本配置", "loader", "plugin", "性能优化", "webpack"],
@@ -156,7 +156,7 @@ const sidebar = {
       children: ["搭建组件库", "基本知识"],
     },
   ],
-  "/单元测试/": [
+  "/工程化/单元测试/": [
     {
       title: "Jest",
       children: ["基本知识", "简单使用"],
@@ -173,6 +173,13 @@ const sidebar = {
       title: "Mocha",
       children: [],
     },
+  ],
+  "/工程化/": [
+    {
+      title: "包管理", children: [
+        "npm", "yarn", "pnpm"
+      ]
+    }
   ],
   // "/WebGL学习/": [
   //   {

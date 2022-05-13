@@ -9,8 +9,6 @@ const nav = [
         items: [
           { text: "HTML", link: "/前端/HTML/" },
           { text: "CSS", link: "/前端/CSS/水平垂直居中" },
-          { text: "浏览器", link: "/前端/浏览器/浏览器缓存机制" },
-          { text: "网络", link: "/前端/网络/常见的状态码" },
         ],
       },
       {
@@ -32,11 +30,17 @@ const nav = [
           { text: "React", link: "/框架、库/React/生命周期" },
           { text: "Vue", link: "/框架、库/Vue/生命周期" },
           { text: "微信小程序", link: "/框架、库/微信小程序/基础知识" },
-          { text: "打包工具", link: "/打包工具/webpack/基本配置" },
-          { text: "单元测试", link: "/单元测试/Jest/基本知识" },
         ],
       }
     ],
+  },
+  {
+    text: "工程化",
+    items: [
+      { text: "包管理", link: "/工程化/包管理/npm" },
+      { text: "打包工具", link: "/工程化/打包工具/webpack/基本配置" },
+      { text: "单元测试", link: "/工程化/单元测试/Jest/基本知识" },
+    ]
   },
   {
     text: "源码分析",
@@ -64,6 +68,8 @@ const nav = [
       { text: "设计模式", link: "/计算机通用/设计模式/设计模式介绍" },
       { text: "web安全", link: "/计算机通用/web安全/web安全简述" },
       { text: "算法", link: "/计算机通用/算法/排序" },
+      { text: "浏览器", link: "/计算机通用/浏览器/浏览器缓存机制" },
+      { text: "网络", link: "/计算机通用/网络/常见的状态码" },
       // { text: "leetcode", link: "/计算机通用/leetcode/无重复字符的最长子串" },
     ],
   },
