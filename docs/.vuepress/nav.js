@@ -29,7 +29,7 @@ const nav = [
         items: [
           { text: "React", link: "/框架、库/React/生命周期" },
           { text: "Vue", link: "/框架、库/Vue/生命周期" },
-          { text: "微信小程序", link: "/框架、库/微信小程序/基础知识" },
+          // { text: "微信小程序", link: "/框架、库/微信小程序/基础知识" },
         ],
       }
     ],

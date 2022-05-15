@@ -4,6 +4,10 @@ BFC (Block formatting context)，又叫块状格式化上下文，就是一个�
 
 ## 解决问题
 
-- 同一个 BFC 中的两个相邻 Box 都设置 margin，margin 部分会重叠，需要对其中一个 Box 在设置一层 BFC，那么就不会重叠了
+只要元素满足下面任一条件即可触发 BFC 特性：
 
-- 当子元素 float 后，父元素就取不到高度了，通过设置 overflow: hidden 属性，就可以获取 BFC 的高度，同时获得父元素的高度
+- body 根元素
+- 浮动元素：float 除 none 以外的值
+- 绝对定位元素：position (absolute、fixed)
+- display 为 inline-block、table-cells、flex
+- overflow 除了 visible 以外的值 (hidden、auto、scroll)

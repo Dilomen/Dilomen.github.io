@@ -6,29 +6,33 @@ const sidebar = {
     },
     {
       title: "CSS",
-      children: ["水平垂直居中", "matrix"],
+      children: ["BFC", "常见问题", "水平垂直居中", "matrix"],
     },
   ],
   "/编程语言/": [
     {
       title: "JavaScript",
       children: [
+        /** JS 底层实现 */
         "编译原理与运行机制",
-        "基本类型和引用类型",
         "闭包与作用域",
+        "异步机制",
         "Event Loop",
         "原型链和继承",
-        "数组",
         "this",
-        "异步机制",
-        "Promise",
+        /** 数据类型 */
+        "基本类型和引用类型",
+        "数组",
         "Symbol",
-        "postMessage",
-        "js模拟传统面向对象功能",
+        "Promise",
+        /** API */
+        "代理和反射",
         "aysnc-await",
-        "柯里化函数和复合函数",
-        "常用函数",
+        "postMessage",
         "requestIdleCallback",
+        /** 其它 */
+        "常用函数",
+        "OOP",
         // 'js查缺补漏01'
       ],
     },
@@ -57,12 +61,12 @@ const sidebar = {
       children: ["生命周期", "响应式机制"],
     },
   ],
-  "/框架、库/微信小程序/": [
-    {
-      title: "微信小程序",
-      children: ["基础知识"],
-    },
-  ],
+  // "/框架、库/微信小程序/": [
+  //   {
+  //     title: "微信小程序",
+  //     children: ["基础知识"],
+  //   },
+  // ],
   "/源码分析/": [
     {
       title: "vue",
