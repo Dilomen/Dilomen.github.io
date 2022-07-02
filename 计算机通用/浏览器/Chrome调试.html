@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>console.table | DILOMEN&#39;S BLOG</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="shortcut icon" href="/logo.ico" type="images/x-icon">
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcdn.net/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.7.1/katex.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
+    <meta name="description" content=" ">
+    <meta name="keywords" content="前端博客,前端进阶,前端学习分享,web前端技术,前端进阶">
+    <meta name="baidu-site-verification" content="1habgJadYO">
+    
+    <link rel="preload" href="/assets/css/0.styles.a21ae05c.css" as="style"><link rel="preload" href="/assets/js/app.42f00aa1.js" as="script"><link rel="preload" href="/assets/js/2.edb9f13a.js" as="script"><link rel="preload" href="/assets/js/138.11f14aa5.js" as="script"><link rel="preload" href="/assets/js/3.61a7e294.js" as="script"><link rel="prefetch" href="/assets/js/10.3e83a25e.js"><link rel="prefetch" href="/assets/js/100.28dbeddf.js"><link rel="prefetch" href="/assets/js/101.c40012a4.js"><link rel="prefetch" href="/assets/js/102.6d1fffe1.js"><link rel="prefetch" href="/assets/js/103.98284151.js"><link rel="prefetch" href="/assets/js/104.24b66762.js"><link rel="prefetch" href="/assets/js/105.cf54b610.js"><link rel="prefetch" href="/assets/js/106.0be9b77e.js"><link rel="prefetch" href="/assets/js/107.ae633409.js"><link rel="prefetch" href="/assets/js/108.af7742e1.js"><link rel="prefetch" href="/assets/js/109.e132bc9e.js"><link rel="prefetch" href="/assets/js/11.37429034.js"><link rel="prefetch" href="/assets/js/110.0f916d0e.js"><link rel="prefetch" href="/assets/js/111.bb41bda2.js"><link rel="prefetch" href="/assets/js/112.541c20af.js"><link rel="prefetch" href="/assets/js/113.bd18de3d.js"><link rel="prefetch" href="/assets/js/114.2b3f5745.js"><link rel="prefetch" href="/assets/js/115.4389e2b1.js"><link rel="prefetch" href="/assets/js/116.c80d48d1.js"><link rel="prefetch" href="/assets/js/117.823b361c.js"><link rel="prefetch" href="/assets/js/118.d3dea1a4.js"><link rel="prefetch" href="/assets/js/119.7283d4e2.js"><link rel="prefetch" href="/assets/js/12.51e0741f.js"><link rel="prefetch" href="/assets/js/120.209094e0.js"><link rel="prefetch" href="/assets/js/121.25afaf69.js"><link rel="prefetch" href="/assets/js/122.fe110abc.js"><link rel="prefetch" href="/assets/js/123.92da54b4.js"><link rel="prefetch" href="/assets/js/124.3f9e73bd.js"><link rel="prefetch" href="/assets/js/125.b0ffb6ed.js"><link rel="prefetch" href="/assets/js/126.b93cd35b.js"><link rel="prefetch" href="/assets/js/127.f31ab3ea.js"><link rel="prefetch" href="/assets/js/128.7d69a18a.js"><link rel="prefetch" href="/assets/js/129.2be82451.js"><link rel="prefetch" href="/assets/js/13.3895f524.js"><link rel="prefetch" href="/assets/js/130.8b3e02e8.js"><link rel="prefetch" href="/assets/js/131.ec472deb.js"><link rel="prefetch" href="/assets/js/132.96300569.js"><link rel="prefetch" href="/assets/js/133.39f1bbad.js"><link rel="prefetch" href="/assets/js/134.3e2a512b.js"><link rel="prefetch" href="/assets/js/135.9a57c728.js"><link rel="prefetch" href="/assets/js/136.1dd80cdf.js"><link rel="prefetch" href="/assets/js/137.52dd46ee.js"><link rel="prefetch" href="/assets/js/139.cfbcfb81.js"><link rel="prefetch" href="/assets/js/14.45d47193.js"><link rel="prefetch" href="/assets/js/140.425a15fe.js"><link rel="prefetch" href="/assets/js/141.f9849b24.js"><link rel="prefetch" href="/assets/js/142.8a1139d0.js"><link rel="prefetch" href="/assets/js/143.7529486e.js"><link rel="prefetch" href="/assets/js/144.5c29b468.js"><link rel="prefetch" href="/assets/js/145.1ae96e29.js"><link rel="prefetch" href="/assets/js/146.6f822034.js"><link rel="prefetch" href="/assets/js/147.5c508ce8.js"><link rel="prefetch" href="/assets/js/148.ee4e4cc2.js"><link rel="prefetch" href="/assets/js/149.58ecc512.js"><link rel="prefetch" href="/assets/js/15.3567bb95.js"><link rel="prefetch" href="/assets/js/150.39f8fce3.js"><link rel="prefetch" href="/assets/js/151.2825d286.js"><link rel="prefetch" href="/assets/js/152.2da8e865.js"><link rel="prefetch" href="/assets/js/153.86a81593.js"><link rel="prefetch" href="/assets/js/154.119e0e7e.js"><link rel="prefetch" href="/assets/js/155.022299a9.js"><link rel="prefetch" href="/assets/js/156.d4df2e10.js"><link rel="prefetch" href="/assets/js/157.4a6181ce.js"><link rel="prefetch" href="/assets/js/158.af5bddfc.js"><link rel="prefetch" href="/assets/js/159.eeb2c9e6.js"><link rel="prefetch" href="/assets/js/16.36a3a351.js"><link rel="prefetch" href="/assets/js/160.70206dcf.js"><link rel="prefetch" href="/assets/js/161.6044f2e0.js"><link rel="prefetch" href="/assets/js/162.989382a2.js"><link rel="prefetch" href="/assets/js/163.da6b4f61.js"><link rel="prefetch" href="/assets/js/164.2a8b67a4.js"><link rel="prefetch" href="/assets/js/165.3989ca70.js"><link rel="prefetch" href="/assets/js/166.ab313e43.js"><link rel="prefetch" href="/assets/js/167.58a63a9e.js"><link rel="prefetch" href="/assets/js/168.f4f52a23.js"><link rel="prefetch" href="/assets/js/169.4acfc055.js"><link rel="prefetch" href="/assets/js/17.4d809ce3.js"><link rel="prefetch" href="/assets/js/170.8eda8934.js"><link rel="prefetch" href="/assets/js/171.2313ddff.js"><link rel="prefetch" href="/assets/js/172.24da8926.js"><link rel="prefetch" href="/assets/js/173.a55d7677.js"><link rel="prefetch" href="/assets/js/174.2ea1853c.js"><link rel="prefetch" href="/assets/js/175.9c2b105a.js"><link rel="prefetch" href="/assets/js/18.a7a91cac.js"><link rel="prefetch" href="/assets/js/19.04f964bb.js"><link rel="prefetch" href="/assets/js/20.b6d8a7c3.js"><link rel="prefetch" href="/assets/js/21.149e098c.js"><link rel="prefetch" href="/assets/js/22.c3acf1a5.js"><link rel="prefetch" href="/assets/js/23.f0d4ea40.js"><link rel="prefetch" href="/assets/js/24.6c98f948.js"><link rel="prefetch" href="/assets/js/25.d3f6c4b1.js"><link rel="prefetch" href="/assets/js/26.80d61efb.js"><link rel="prefetch" href="/assets/js/27.88c44748.js"><link rel="prefetch" href="/assets/js/28.dfb49e22.js"><link rel="prefetch" href="/assets/js/29.aaf2bc24.js"><link rel="prefetch" href="/assets/js/30.a539f221.js"><link rel="prefetch" href="/assets/js/31.7eec0158.js"><link rel="prefetch" href="/assets/js/32.c4778059.js"><link rel="prefetch" href="/assets/js/33.b0309fb7.js"><link rel="prefetch" href="/assets/js/34.05f5835f.js"><link rel="prefetch" href="/assets/js/35.9d133d1b.js"><link rel="prefetch" href="/assets/js/36.30d81f99.js"><link rel="prefetch" href="/assets/js/37.4ec929f8.js"><link rel="prefetch" href="/assets/js/38.3899d039.js"><link rel="prefetch" href="/assets/js/39.b5a4fc4f.js"><link rel="prefetch" href="/assets/js/4.3b8adb0a.js"><link rel="prefetch" href="/assets/js/40.896127a9.js"><link rel="prefetch" href="/assets/js/41.a8b59a21.js"><link rel="prefetch" href="/assets/js/42.d8b68479.js"><link rel="prefetch" href="/assets/js/43.539d377f.js"><link rel="prefetch" href="/assets/js/44.b25c02db.js"><link rel="prefetch" href="/assets/js/45.b4563026.js"><link rel="prefetch" href="/assets/js/46.829a8bf2.js"><link rel="prefetch" href="/assets/js/47.59d38e5b.js"><link rel="prefetch" href="/assets/js/48.8be081d8.js"><link rel="prefetch" href="/assets/js/49.a08f1830.js"><link rel="prefetch" href="/assets/js/5.49aa2835.js"><link rel="prefetch" href="/assets/js/50.62c6483e.js"><link rel="prefetch" href="/assets/js/51.a30179ca.js"><link rel="prefetch" href="/assets/js/52.22c37887.js"><link rel="prefetch" href="/assets/js/53.899c56f7.js"><link rel="prefetch" href="/assets/js/54.3a0102f8.js"><link rel="prefetch" href="/assets/js/55.6cd2f68f.js"><link rel="prefetch" href="/assets/js/56.7f328803.js"><link rel="prefetch" href="/assets/js/57.8f1e329a.js"><link rel="prefetch" href="/assets/js/58.735913d8.js"><link rel="prefetch" href="/assets/js/59.65a165bd.js"><link rel="prefetch" href="/assets/js/6.b541305f.js"><link rel="prefetch" href="/assets/js/60.5e2afdd3.js"><link rel="prefetch" href="/assets/js/61.70659dd2.js"><link rel="prefetch" href="/assets/js/62.cd71fd02.js"><link rel="prefetch" href="/assets/js/63.542e747d.js"><link rel="prefetch" href="/assets/js/64.6029712d.js"><link rel="prefetch" href="/assets/js/65.6d904154.js"><link rel="prefetch" href="/assets/js/66.73003587.js"><link rel="prefetch" href="/assets/js/67.31cc557b.js"><link rel="prefetch" href="/assets/js/68.a0131337.js"><link rel="prefetch" href="/assets/js/69.b94678ce.js"><link rel="prefetch" href="/assets/js/7.fabce998.js"><link rel="prefetch" href="/assets/js/70.70175176.js"><link rel="prefetch" href="/assets/js/71.38f9fa21.js"><link rel="prefetch" href="/assets/js/72.0b43d0ef.js"><link rel="prefetch" href="/assets/js/73.f27252fd.js"><link rel="prefetch" href="/assets/js/74.5dccc453.js"><link rel="prefetch" href="/assets/js/75.ed796fa2.js"><link rel="prefetch" href="/assets/js/76.a5db5590.js"><link rel="prefetch" href="/assets/js/77.772277dc.js"><link rel="prefetch" href="/assets/js/78.a5c6c3d5.js"><link rel="prefetch" href="/assets/js/79.f3f60dbf.js"><link rel="prefetch" href="/assets/js/8.3eef07a9.js"><link rel="prefetch" href="/assets/js/80.52fe4d32.js"><link rel="prefetch" href="/assets/js/81.ce3ff02a.js"><link rel="prefetch" href="/assets/js/82.35424ee2.js"><link rel="prefetch" href="/assets/js/83.f9029fda.js"><link rel="prefetch" href="/assets/js/84.21b21f03.js"><link rel="prefetch" href="/assets/js/85.7453e07c.js"><link rel="prefetch" href="/assets/js/86.4924e795.js"><link rel="prefetch" href="/assets/js/87.600b7901.js"><link rel="prefetch" href="/assets/js/88.8afc3341.js"><link rel="prefetch" href="/assets/js/89.121a73bd.js"><link rel="prefetch" href="/assets/js/9.440a3591.js"><link rel="prefetch" href="/assets/js/90.d80142cf.js"><link rel="prefetch" href="/assets/js/91.10290169.js"><link rel="prefetch" href="/assets/js/92.19f19216.js"><link rel="prefetch" href="/assets/js/93.e21b64a3.js"><link rel="prefetch" href="/assets/js/94.afcb5ab9.js"><link rel="prefetch" href="/assets/js/95.0692127b.js"><link rel="prefetch" href="/assets/js/96.c3aaf90a.js"><link rel="prefetch" href="/assets/js/97.b8d368f1.js"><link rel="prefetch" href="/assets/js/98.ff43c32b.js"><link rel="prefetch" href="/assets/js/99.2a811a90.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a21ae05c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">DILOMEN'S BLOG</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          综合
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/前端/CSS/水平垂直居中.html" class="nav-link">
+  CSS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          编程语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/编程语言/JavaScript/基本类型和引用类型.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/编程语言/TypeScript/基础知识.html" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架 | 库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架、库/React/生命周期.html" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/框架、库/Vue/生命周期.html" class="nav-link">
+  Vue
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/工程化/包管理/npm.html" class="nav-link">
+  包管理
+</a></li><li class="dropdown-item"><!----> <a href="/工程化/打包工具/webpack/基本配置.html" class="nav-link">
+  打包工具
+</a></li><li class="dropdown-item"><!----> <a href="/工程化/单元测试/Jest/基本知识.html" class="nav-link">
+  单元测试
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow down"></span></button> <button type="button" aria-label="源码分析" class="mobile-dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/源码分析/vue/运行机制.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/源码分析/axios/axios源码分析.html" class="nav-link">
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/源码分析/react/Component.html" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/源码分析/antd/form.html" class="nav-link">
+  antd
+</a></li><li class="dropdown-item"><!----> <a href="/源码分析/react-router/" class="nav-link">
+  react-router
+</a></li><li class="dropdown-item"><!----> <a href="/源码分析/vue-router/基本知识.html" class="nav-link">
+  vue-router
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机通用" class="dropdown-title"><span class="title">计算机通用</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机通用" class="mobile-dropdown-title"><span class="title">计算机通用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/计算机通用/计算机基础/数据结构.html" class="nav-link">
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/计算机通用/设计模式/设计模式介绍.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/计算机通用/web安全/web安全简述.html" class="nav-link">
+  web安全
+</a></li><li class="dropdown-item"><!----> <a href="/计算机通用/算法/排序.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机通用/浏览器/浏览器缓存机制.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/计算机通用/网络/常见的状态码.html" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="拓展学习" class="dropdown-title"><span class="title">拓展学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="拓展学习" class="mobile-dropdown-title"><span class="title">拓展学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/拓展学习/Java/基础知识.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/拓展学习/技术了解/Redis.html" class="nav-link">
+  技术了解
+</a></li><li class="dropdown-item"><!----> <a href="/拓展学习/技术杂谈/关于重构的那点事.html" class="nav-link">
+  技术杂谈
+</a></li><li class="dropdown-item"><!----> <a href="/拓展学习/Node/基础知识/基础知识.html" class="nav-link">
+  Node
+</a></li></ul></div></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/Dilomen" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          综合
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/前端/CSS/水平垂直居中.html" class="nav-link">
+  CSS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          编程语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/编程语言/JavaScript/基本类型和引用类型.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/编程语言/TypeScript/基础知识.html" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架 | 库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架、库/React/生命周期.html" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/框架、库/Vue/生命周期.html" class="nav-link">
+  Vue
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/工程化/包管理/npm.html" class="nav-link">
+  包管理
+</a></li><li class="dropdown-item"><!----> <a href="/工程化/打包工具/webpack/基本配置.html" class="nav-link">
+  打包工具
+</a></li><li class="dropdown-item"><!----> <a href="/工程化/单元测试/Jest/基本知识.html" class="nav-link">
+  单元测试
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow down"></span></button> <button type="button" aria-label="源码分析" class="mobile-dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/源码分析/vue/运行机制.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/源码分析/axios/axios源码分析.html" class="nav-link">
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/源码分析/react/Component.html" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/源码分析/antd/form.html" class="nav-link">
+  antd
+</a></li><li class="dropdown-item"><!----> <a href="/源码分析/react-router/" class="nav-link">
+  react-router
+</a></li><li class="dropdown-item"><!----> <a href="/源码分析/vue-router/基本知识.html" class="nav-link">
+  vue-router
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机通用" class="dropdown-title"><span class="title">计算机通用</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机通用" class="mobile-dropdown-title"><span class="title">计算机通用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/计算机通用/计算机基础/数据结构.html" class="nav-link">
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/计算机通用/设计模式/设计模式介绍.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/计算机通用/web安全/web安全简述.html" class="nav-link">
+  web安全
+</a></li><li class="dropdown-item"><!----> <a href="/计算机通用/算法/排序.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机通用/浏览器/浏览器缓存机制.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/计算机通用/网络/常见的状态码.html" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="拓展学习" class="dropdown-title"><span class="title">拓展学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="拓展学习" class="mobile-dropdown-title"><span class="title">拓展学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/拓展学习/Java/基础知识.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/拓展学习/技术了解/Redis.html" class="nav-link">
+  技术了解
+</a></li><li class="dropdown-item"><!----> <a href="/拓展学习/技术杂谈/关于重构的那点事.html" class="nav-link">
+  技术杂谈
+</a></li><li class="dropdown-item"><!----> <a href="/拓展学习/Node/基础知识/基础知识.html" class="nav-link">
+  Node
+</a></li></ul></div></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/Dilomen" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>计算机基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>web安全</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网络</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>浏览器</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/计算机通用/浏览器/页面优化小技巧.html" class="sidebar-link">页面优化小技巧</a></li><li><a href="/计算机通用/浏览器/浏览器缓存机制.html" class="sidebar-link">浏览器缓存机制</a></li><li><a href="/计算机通用/浏览器/Chrome调试.html" class="active sidebar-link">Chrome调试</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/计算机通用/浏览器/客户端渲染和服务端渲染.html" class="sidebar-link">客户端渲染和服务端渲染</a></li><li><a href="/计算机通用/浏览器/深入了解现代浏览器.html" class="sidebar-link">深入了解现代浏览器</a></li><li><a href="/计算机通用/浏览器/重绘和回流.html" class="sidebar-link">重绘和回流</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="console-table"><a href="#console-table" class="header-anchor">#</a> console.table</h3> <p>按表格展示数据内容</p> <h3 id="查看接口请求是哪里执行的"><a href="#查看接口请求是哪里执行的" class="header-anchor">#</a> 查看接口请求是哪里执行的</h3> <p>可以点开 network 下的接口请求，找到 Initiator，这里会出现接口接口请求的执行栈</p> <p><a data-fancybox="" title="接口执行代码位置定位" href="/前端/接口执行代码位置定位.png"><img src="/%E5%89%8D%E7%AB%AF/%E6%8E%A5%E5%8F%A3%E6%89%A7%E8%A1%8C%E4%BB%A3%E7%A0%81%E4%BD%8D%E7%BD%AE%E5%AE%9A%E4%BD%8D.png" alt="&quot;接口执行代码位置定位&quot;"></a></p> <h3 id="查看请求连接时间"><a href="#查看请求连接时间" class="header-anchor">#</a> 查看请求连接时间</h3> <p>可以由下图可知</p> <ul><li>DNS 域名解析 12μs</li> <li>建立 TCP 使用了 60ms</li> <li>建立 HTTPS 连接使用了 43.35ms</li> <li>从建立连接到接受到数据，等待了 31.83ms</li> <li>资源下载用了 0.2ms</li></ul> <p>&lt;a data-fancybox title=&quot;&quot;查看连接时间&quot;&quot; href=&quot;/前端/查看连接时间.png&quot;&gt;<img src="/%E5%89%8D%E7%AB%AF/%E6%9F%A5%E7%9C%8B%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4.png" alt="&quot;查看连接时间&quot;"></p> <h3 id="查看元素上的绑定事件"><a href="#查看元素上的绑定事件" class="header-anchor">#</a> 查看元素上的绑定事件</h3> <p>查找元素的 Event Listeners，点开绑定的事件，就可以知道在相应操作时所执行了哪些事件</p> <p><a data-fancybox="" title="元素上的绑定事件" href="/前端/元素上的绑定事件.png"><img src="/%E5%89%8D%E7%AB%AF/%E5%85%83%E7%B4%A0%E4%B8%8A%E7%9A%84%E7%BB%91%E5%AE%9A%E4%BA%8B%E4%BB%B6.png" alt="&quot;元素上的绑定事件&quot;"></a></p> <h3 id="浏览器直接修改文件"><a href="#浏览器直接修改文件" class="header-anchor">#</a> 浏览器直接修改文件</h3> <blockquote><p>场景：当我们在浏览器中直接调试样式等操作时，希望操作的步骤同步到文件时，可以通过以下方式：</p></blockquote> <p>打开 Sources，找到 Filesystem，点击 Add folder to workspace，加入自己的工作目录即可</p> <p><a data-fancybox="" title="浏览器直接修改文件" href="/前端/浏览器直接修改文件.png"><img src="/%E5%89%8D%E7%AB%AF/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9B%B4%E6%8E%A5%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6.png" alt="&quot;浏览器直接修改文件&quot;"></a></p> <p>然后就可以修改浏览器中的“文件”，或者在样式调试中修改，所修改的内容会同步到文件</p> <h3 id="监控页面的重绘-性能检测"><a href="#监控页面的重绘-性能检测" class="header-anchor">#</a> 监控页面的重绘（性能检测）</h3> <blockquote><p>场景：我们需要对页面进行性能优化的时候，希望能看到哪些内容被重绘了
+<a data-fancybox="" title="浏览器直接修改文件" href="/前端/重绘监控01.png '浏览器直接修改文件'"><img src="/%E5%89%8D%E7%AB%AF/%E9%87%8D%E7%BB%98%E7%9B%91%E6%8E%A701.png" alt="&quot;浏览器直接修改文件&quot;" title="浏览器直接修改文件"></a></p></blockquote> <p>点击“三点“拓展，选择 More tools,然后点击 Rendering
+<a data-fancybox="" title="浏览器直接修改文件" href="/前端/重绘监控02.png '浏览器直接修改文件'"><img src="/%E5%89%8D%E7%AB%AF/%E9%87%8D%E7%BB%98%E7%9B%91%E6%8E%A702.png" alt="&quot;浏览器直接修改文件&quot;" title="浏览器直接修改文件"></a>
+选择想要显示高亮的内容</p> <h3 id="设备模拟网络请求"><a href="#设备模拟网络请求" class="header-anchor">#</a> 设备模拟网络请求</h3> <p><a data-fancybox="" title="浏览器直接修改文件" href="/前端/设备模拟网络请求01.png"><img src="/%E5%89%8D%E7%AB%AF/%E8%AE%BE%E5%A4%87%E6%A8%A1%E6%8B%9F%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%8201.png" alt="&quot;浏览器直接修改文件&quot;"></a></p> <p>可以查看不同网络和不同设备，在请求内容的不同表现</p> <p><a data-fancybox="" title="浏览器直接修改文件" href="/前端/设备模拟网络请求02.png"><img src="/%E5%89%8D%E7%AB%AF/%E8%AE%BE%E5%A4%87%E6%A8%A1%E6%8B%9F%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%8202.png" alt="&quot;浏览器直接修改文件&quot;"></a></p> <h3 id="测试当前页面的方法和添加新的方法"><a href="#测试当前页面的方法和添加新的方法" class="header-anchor">#</a> 测试当前页面的方法和添加新的方法</h3> <p>Source 下的 snippet 可以编辑新的代码在当前页面下执行</p> <p><a data-fancybox="" title="snippet测试方法" href="/前端/snippet测试方法.png 'snippet测试方法'"><img src="/%E5%89%8D%E7%AB%AF/snippet%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95.png" alt="&quot;snippet测试方法&quot;" title="snippet测试方法"></a></p> <h3 id="performance"><a href="#performance" class="header-anchor">#</a> Performance</h3> <p>记录和运行分析应用程序所有的活动</p> <p><a data-fancybox="" title="Performance" href="/前端/Performance.png"><img src="/%E5%89%8D%E7%AB%AF/Performance.png" alt="&quot;Performance&quot;"></a></p> <blockquote><p>转载于<a href="https://blog.csdn.net/kongduxue/article/details/82017491" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/kongduxue/article/details/82017491<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <p>同时还有一个 performance 的全局对象，包含各种性能数据</p> <p><a data-fancybox="" title="performance对象" href="/前端/performance对象.png"><img src="/%E5%89%8D%E7%AB%AF/performance%E5%AF%B9%E8%B1%A1.png" alt="&quot;performance对象&quot;"></a></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>performance <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// memory 是非标准属性，只在 Chrome 有</span>
+  <span class="token comment">//这个属性提供了一个可以获取到基本内存使用情况的对象</span>
+  memory<span class="token operator">:</span> <span class="token punctuation">{</span>
+    usedJSHeapSize<span class="token operator">:</span> <span class="token number">10000000</span><span class="token punctuation">,</span> <span class="token comment">// JS 对象（包括V8引擎内部对象）占用的内存</span>
+    totalJSHeapSize<span class="token operator">:</span> <span class="token number">10000000</span><span class="token punctuation">,</span> <span class="token comment">// 可使用的内存</span>
+    jsHeapSizeLimit<span class="token operator">:</span> <span class="token number">2190000000</span><span class="token punctuation">,</span> <span class="token comment">// 内存大小限制</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">//  navigation: 提供操作（包含在 timing 里时间）的有用上下文</span>
+  <span class="token comment">//包括页面是加载还是刷新、发生了多少次重定向，等等。</span>
+  navigation<span class="token operator">:</span> <span class="token punctuation">{</span>
+    redirectCount<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">// 重定向次数</span>
+    type<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">// 0   正常进入的页面（即非刷新、非重定向等）</span>
+    <span class="token comment">// 1   通过 window.location.reload() (即刷新页面)</span>
+    <span class="token comment">// 2   通过浏览器的前进后退按钮进入的页面（历史记录）</span>
+    <span class="token comment">// 255 非以上方式进入的页面</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  timing<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 同一个浏览器上下文的上一个文档卸载(unload)结束时的UNIX时间戳。</span>
+    <span class="token comment">//如果没有上一个文档，这个值会和fetchStart相同。</span>
+    navigationStart<span class="token operator">:</span> <span class="token number">1441112691935</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 上一个文档unload事件抛出时的UNIX时间戳。</span>
+    <span class="token comment">//如果没有上一个文档,这个值会返回0.</span>
+    unloadEventStart<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 和 unloadEventStart 相对应，unload事件处理完成时的UNIX时间戳。</span>
+    <span class="token comment">//如果没有上一个文档,这个值会返回0.</span>
+    unloadEventEnd<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 第一个HTTP重定向开始时的UNIX时间戳。</span>
+    <span class="token comment">//如果没有重定向，或者重定向中的一个不同源，这个值会返回0.</span>
+    redirectStart<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 最后一个HTTP重定向完成时（也就是说是HTTP响应的最后一个比特直接被收到的时间）的UNIX时间戳。</span>
+    <span class="token comment">//如果没有重定向，或者重定向中的一个不同源，这个值会返回0.</span>
+    redirectEnd<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 浏览器准备好使用HTTP请求来获取(fetch)文档的UNIX时间戳。这个时间点会在检查任何应用缓存之前。</span>
+    fetchStart<span class="token operator">:</span> <span class="token number">1441112692155</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// DNS 域名查询开始的UNIX时间戳。</span>
+    <span class="token comment">//如果使用了持续连接(persistent connection)，或者这个信息存储到了缓存或者本地资源上，这个值将和fetchStart一致。</span>
+    domainLookupStart<span class="token operator">:</span> <span class="token number">1441112692155</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// DNS 域名查询完成的时间.</span>
+    <span class="token comment">//如果使用了本地缓存（即无 DNS 查询）或持久连接，则与 fetchStart 值相等</span>
+    domainLookupEnd<span class="token operator">:</span> <span class="token number">1441112692155</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// HTTP（TCP） 域名查询结束的UNIX时间戳。</span>
+    <span class="token comment">//如果使用了持续连接(persistent connection)，或者这个信息存储到了缓存或者本地资源上，这个值将和 fetchStart一致。</span>
+    connectStart<span class="token operator">:</span> <span class="token number">1441112692155</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// HTTP（TCP） 返回浏览器与服务器之间的连接建立时的Unix毫秒时间戳。</span>
+    <span class="token comment">// 如果建立的是持久连接，则返回值等同于fetchStart属性的值。</span>
+    <span class="token comment">//连接建立指的是所有握手和认证过程全部结束。</span>
+    connectEnd<span class="token operator">:</span> <span class="token number">1441112692155</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// HTTPS 返回浏览器与服务器开始安全链接的握手时的Unix毫秒时间戳。</span>
+    <span class="token comment">//如果当前网页不要求安全连接，则返回0。</span>
+    secureConnectionStart<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 返回浏览器向服务器发出HTTP请求时（或开始读取本地缓存时）的Unix毫秒时间戳。</span>
+    requestStart<span class="token operator">:</span> <span class="token number">1441112692158</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 返回浏览器从服务器收到（或从本地缓存读取）第一个字节时的Unix毫秒时间戳。</span>
+    <span class="token comment">//如果传输层在开始请求之后失败并且连接被重开，该属性将会被数制成新的请求的相对应的发起时间。</span>
+    responseStart<span class="token operator">:</span> <span class="token number">1441112692686</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 返回浏览器从服务器收到（或从本地缓存读取，或从本地资源读取）最后一个字节时（如果在此之前HTTP连接已经关闭，则返回关闭时）的Unix毫秒时间戳。</span>
+    responseEnd<span class="token operator">:</span> <span class="token number">1441112692687</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 当前网页DOM结构开始解析时（即Document.readyState属性变为“loading”、相应的 readystatechange事件触发时）的Unix毫秒时间戳。</span>
+    domLoading<span class="token operator">:</span> <span class="token number">1441112692690</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 当前网页DOM结构结束解析、开始加载内嵌资源时（即Document.readyState属性变为“interactive”、相应的readystatechange事件触发时）的Unix毫秒时间戳。</span>
+    domInteractive<span class="token operator">:</span> <span class="token number">1441112693093</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 当解析器发送DOMContentLoaded 事件，即所有需要被执行的脚本已经被解析时的Unix毫秒时间戳。</span>
+    domContentLoadedEventStart<span class="token operator">:</span> <span class="token number">1441112693093</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 当所有需要立即执行的脚本已经被执行（不论执行顺序）时的Unix毫秒时间戳。</span>
+    domContentLoadedEventEnd<span class="token operator">:</span> <span class="token number">1441112693101</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 当前文档解析完成，即Document.readyState 变为 'complete'且相对应的readystatechange 被触发时的Unix毫秒时间戳</span>
+    domComplete<span class="token operator">:</span> <span class="token number">1441112693214</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// load事件被发送时的Unix毫秒时间戳。如果这个事件还未被发送，它的值将会是0。</span>
+
+    loadEventStart<span class="token operator">:</span> <span class="token number">1441112693214</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 当load事件结束，即加载事件完成时的Unix毫秒时间戳。如果这个事件还未被发送，或者尚未完成，它的值将会是0.</span>
+    loadEventEnd<span class="token operator">:</span> <span class="token number">1441112693215</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br></div></div><blockquote><p>转载于<a href="https://www.cnblogs.com/yuqing6/p/8463113.html" target="_blank" rel="noopener noreferrer">https://www.cnblogs.com/yuqing6/p/8463113.html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <p>同时该对象可以通过其 now 方法来更加精确的计算任务所使用的时间,</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> startTime <span class="token operator">=</span> performance<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">doSomeThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> endTime <span class="token operator">=</span> performance<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> endTime <span class="token operator">-</span> startTime<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="持续更新中"><a href="#持续更新中" class="header-anchor">#</a> 持续更新中</h3></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/计算机通用/浏览器/浏览器缓存机制.html" class="prev">
+        浏览器缓存机制
+      </a></span> <span class="next"><a href="/计算机通用/浏览器/客户端渲染和服务端渲染.html">
+        客户端渲染和服务端渲染
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><div class="fixed" data-v-55c79701></div><div></div></div></div>
+    <script src="/assets/js/app.42f00aa1.js" defer></script><script src="/assets/js/2.edb9f13a.js" defer></script><script src="/assets/js/138.11f14aa5.js" defer></script><script src="/assets/js/3.61a7e294.js" defer></script>
+  </body>
+</html>
